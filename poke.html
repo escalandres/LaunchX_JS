@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/img/pokeball.png">
+    <link rel="stylesheet" href="./src/css/pokeStyle.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <input type="text" id="pokeName_input" placeholder="Nombre del pokemon">
+    <button type="submit" onclick="fetchPokemon()">Buscar</button>
+    <br><br>
+    
+    <h1 id="pokemessage"></h1>
+    <br>
+    <h1 id="pokeName"></h1>
+    <img id="pokeImg" class="pokemon-img" src="./src/img/pokeball.png" alt="">
+    <img id="pokeType" class="type-pokemon hidden" src="./src/img/pokeball.png" alt="Type1">
+    <img id="pokeType1" class="type-pokemon hidden" src="./src/img/pokeball.png" alt="Type2">
+</body>
+<footer>
+    <script src="./app.js"></script>
+</footer>
+</html>
