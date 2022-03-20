@@ -1,3 +1,3 @@
 # Practica JS: Pokedex
 ## Pokedex view
-[Pokedex](./src/img/pokedex.png)
+[Pokedex html](./src/img/pokedex.png)
