@@ -251,6 +251,7 @@ body{
     background-color: rgb(215,215,215);
     /* width: 100%; */
     height: 30px;
+    padding-left: 10px
 }
 
 .dataname > p{
@@ -331,6 +332,7 @@ body{
     padding-top: 10px;
     color: rgb(53, 50, 49);
     padding-left: 10px;
+    font-size: 13px;
 }
 
 .stats{
@@ -347,9 +349,24 @@ body{
     
 }
 
-.stats-p > p{
+.stat1, .stat2, .stat3, .stat4, .stat5, .stat6{
+    height: 16px;
+}
+
+.left-stat{
+    float: left;
+    
+}
+
+.right-stat{
+    float: right;
+    padding-right: 20px;
+}
+
+.stat1 > p, .stat2 > p, .stat3 > p, .stat4 > p, .stat5 > p, .stat6 > p{
+    height: 16px;
     color: rgb(53, 50, 49);
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 10px;
 }
 
@@ -403,4 +420,63 @@ body{
 .moves-title > p {
     padding-left: 8px;
     padding-top: 5px;
+}
+
+.moves-left{
+    float: left;
+    width: 40%;
+    height: 75%;
+    padding-left: 20px;
+}
+
+.moves-right{
+    float: right;
+    width: 40%;
+    height: 75%;
+    padding-right: 20px;
+}
+
+.move1{
+    margin-top: 10px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(215,215,215);
+}
+
+.move1:hover, .move2:hover, .move3:hover, .move4:hover{
+    margin-top: 10px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.move1 > p, .move2 > p, .move3 > p, .move4 > p{
+    padding: 5px 15px 10px 20px;
+    font-size: 13px;
+}
+
+.move2{
+    margin-top: 10px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(215,215,215);
+}
+
+.move3{
+    margin-top: 10px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(215,215,215);
+}
+
+.move4{
+    margin-top: 10px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(215,215,215);
 }

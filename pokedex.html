@@ -21,22 +21,22 @@
                 </div>
                 <div class="data">
                     <div class="dataname">
-                        <p id="pokeID" class="pokemon-data left-data"># 0000</p>
+                        <p id="pokeID" class="pokemon-data left-data"># 0</p>
                         <p id="pokeName" class="pokemon-data right-data">Unknown</p>
                     </div>
                     <div class="t-hw">
                         <div class="types">
-                            <img id="pokeType" class="type-pokemon left-data " src="./src/img/types/bug.png" alt="Type1">
-                            <img id="pokeType1" class="type-pokemon right-data " src="./src/img/types/dark.png" alt="Type2">
+                            <img id="pokeType" class="type-pokemon left-data hidden" src="./src/img/types/bug.png" alt="Type1">
+                            <img id="pokeType1" class="type-pokemon right-data hidden" src="./src/img/types/dark.png" alt="Type2">
                         </div>
                         <div class="ht-wt">
                             <div class="ht">
                                 <p class=".pokemon-data  left-data ">HT</p>
-                                <p id="pokeHeight" class="pokemon-data right-data">1.05 m</p>
+                                <p id="pokeHeight" class="pokemon-data right-data">0 m</p>
                             </div>
                             <div class="wt">
                                 <p class=".pokemon-data left-data ">WT</p>
-                                <p id="pokeWeight" class="pokemon-data right-data">89 kg</p>
+                                <p id="pokeWeight" class="pokemon-data right-data">0 kg</p>
                             </div>
                         </div>
                     </div>
@@ -49,11 +49,11 @@
                         <p>Habilidades</p>
                     </div>
                     <div class="abi1">
-                        <p id="pokeAbi1" class=".pokemon-data ">Abi1</p>
+                        <p id="pokeAbi1" class=".pokemon-data ">Not found</p>
 
                     </div>
                     <div class="abi2">
-                        <p id="pokeAbi2" class=".pokemon-data ">Abi2</p>
+                        <p id="pokeAbi2" class=".pokemon-data ">Not found</p>
 
                     </div>
                     
@@ -63,12 +63,30 @@
                         <p>Estadisticas</p>
                     </div>
                     <div class="stats-p"> 
-                        <p id="pokeStat1" class=".pokemon-data hidde">HP</p>
-                        <p id="pokeStat2" class=".pokemon-data hidde">Attack</p>
-                        <p id="pokeStat3" class=".pokemon-data hidde">Defense</p>
-                        <p id="pokeStat4" class=".pokemon-data hidde">Sp. Atk</p>
-                        <p id="pokeStat5" class=".pokemon-data hidde">Sp. Def</p>
-                        <p id="pokeStat6" class=".pokemon-data hidde">Speed</p>
+                        <div class="stat1">
+                            <p class=".pokemon-data left-stat">HP</p>
+                            <p id="pokeStat1" class=".pokemon-data right-stat">0</p>
+                        </div>
+                        <div class="stat2">
+                            <p class=".pokemon-data left-stat">Attack</p>
+                            <p id="pokeStat2" class=".pokemon-data right-stat">0</p>
+                        </div>
+                        <div class="stat3">
+                            <p class=".pokemon-data left-stat">Defense</p>
+                            <p id="pokeStat3" class=".pokemon-data right-stat">0</p>
+                        </div>
+                        <div class="stat4">
+                            <p class=".pokemon-data left-stat">Sp. Atk</p>
+                            <p id="pokeStat4" class=".pokemon-data right-stat">0</p>
+                        </div>
+                        <div class="stat5">
+                            <p class=".pokemon-data left-stat">Sp. Def</p>
+                            <p id="pokeStat5" class=".pokemon-data right-stat">0</p>
+                        </div>
+                        <div class="stat6">
+                            <p class=".pokemon-data left-stat">Speed</p>
+                            <p id="pokeStat6" class=".pokemon-data right-stat">0</p>
+                        </div>
                     </div>
 
                     
@@ -76,30 +94,30 @@
             </div>
         </div>
         <div class="display2">
-            <input type="text" id="pokeName_input" placeholder="Nombre del pokemon">
+            <input type="text" id="pokeName_input" placeholder="Nombre del pokemon" required>
             <button id="search-btn" class="" type="submit" onclick="fetchPokemon()">Buscar</button>
             <div class="moves">
                 <div class="moves-title">
                     <p class="left-data">Movimientos de</p>
-                    <p id="pokeName" class=" right-data">Unknown</p>
+                    <p id="pokeName2" class=" right-data">Unknown</p>
                 </div>
                 <div class="moves-left">
                     <div class="move1">
-                        <p id="pokeMove1" class=".pokemon-data hidde">Thurder</p>
+                        <p id="pokeMove1" class=".pokemon-data hidde"></p>
 
                     </div>
                     <div class="move2">
-                        <p id="pokeMove2" class=".pokemon-data hidde">Thurder</p>
+                        <p id="pokeMove2" class=".pokemon-data hidde"></p>
 
                     </div>
                 </div>
                 <div class="moves-right">
                     <div class="move3">
-                        <p id="pokeMove3" class=".pokemon-data hidde">Thurder</p>
+                        <p id="pokeMove3" class=".pokemon-data hidde"></p>
 
                     </div>
                     <div class="move4">
-                        <p id="pokeMove4" class=".pokemon-data hidde">Thurder</p>
+                        <p id="pokeMove4" class=".pokemon-data hidde"></p>
 
                     </div>
                 </div>
