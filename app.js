@@ -29,7 +29,7 @@ const fetchPokemon = () => {
                 weight: data.weight,
                 id: data.id,
                 ability1: data.abilities[0].ability.name,
-                ability2: data.abilities[1].ability.name,
+                ability2: "",
                 stats: [data.stats[0].base_stat, data.stats[1].base_stat ,data.stats[2].base_stat,
                     data.stats[3].base_stat, data.stats[4].base_stat, data.stats[5].base_stat],
                 moves: [data.moves[0].move.name,data.moves[1].move.name,
@@ -40,6 +40,12 @@ const fetchPokemon = () => {
             }
             else{
                 pokeData.type1 = data.types[1].type.name;
+            }
+            if(data.abilities[1] === undefined){
+                console.log("Ability 2 is undefines\d");
+            }
+            else{
+                pokeData.ability2 = data.abilities[1].ability.name
             }
             console.log(pokeData)
             pokeImage("",1,pokeData)
@@ -70,11 +76,28 @@ let pokeImage = (url,found,pokeData) => {
     const pokeMove4 = document.getElementById("pokeMove4");
 
     if(found === 0){
+        //Not found
         alert("El pokemon no pudo ser encontrado!");
         pokeType.classList.add("hidden");
         pokeType1.classList.add("hidden");
         pokePhoto.src = url;
-        pokeName.innerHTML = "";
+        pokeName.innerHTML = "Unknown";
+        pokeName2.innerHTML = "Unknown";
+        pokeId.innerHTML = "# 0";
+        pokeHeight.innerHTML = "# m";
+        pokeWeight.innerHTML = "# kg";
+        pokeAbi1.innerHTML = "Not found";
+        pokeAbi2.innerHTML = "Not found";
+        pokeStat1.innerHTML = "0";
+        pokeStat2.innerHTML = "0";
+        pokeStat3.innerHTML = "0";
+        pokeStat4.innerHTML = "0";
+        pokeStat5.innerHTML = "0";
+        pokeStat6.innerHTML = "0";
+        pokeMove1.innerHTML = "None";
+        pokeMove2.innerHTML = "None";
+        pokeMove3.innerHTML = "None";
+        pokeMove4.innerHTML = "None";
     }
     else{
         //Mostrar los textos
@@ -105,29 +128,25 @@ let pokeImage = (url,found,pokeData) => {
         pokeMove2.innerHTML = capitalizeFirstLetter(pokeData.moves[1]);
         pokeMove3.innerHTML = capitalizeFirstLetter(pokeData.moves[2]);
         pokeMove4.innerHTML = capitalizeFirstLetter(pokeData.moves[3]);
-
+        
+        pokeType.classList.remove("hidden");
         if(pokeData.type === "fairy"||pokeData.type === "steel"){
-            pokeType.classList.remove("hidden");
             pokeType.src = "./src/img/types/"+pokeData.type+".svg";
-            if(pokeData.type1 !== ""){
-                pokeType1.classList.remove("hidden");
+        }
+        else{
+            pokeType.src = "./src/img/types/"+pokeData.type+".png";
+        }
+        if(pokeData.type1 !== ""){
+            pokeType1.classList.remove("hidden");
+            if(pokeData.type1 === "fairy"||pokeData.type1 === "steel"){
                 pokeType1.src = "./src/img/types/"+pokeData.type1+".svg";
-                
             }
             else{
-                pokeType1.classList.add("hidden");
+                pokeType1.src = "./src/img/types/"+pokeData.type1+".png";
             }
         }
         else{
-            pokeType.classList.remove("hidden");
-            pokeType.src = "./src/img/types/"+pokeData.type+".png";
-            if(pokeData.type1 !== ""){
-                pokeType1.classList.remove("hidden");
-                pokeType1.src = "./src/img/types/"+pokeData.type1+".png";
-            }
-            else{
-                pokeType1.classList.add("hidden");
-            }
+            pokeType1.classList.add("hidden");
         }
     }
     
