@@ -15,19 +15,47 @@
     <div class="main-div-container">
         <div class="pokedex"></div>
         <div class="display1">
-            <div>
+            <div class="upper">
                 <div class="image">
                     <img id="pokeImg" class="pokemon-img" src="./src/img/pokeball.png" alt="">
                 </div>
-                <div class="dataname">
-                    <p id="pokeName" class=".pokemon-data hidden"></p>
-                    <p id="pokeID" class=".pokemon-data hidden"></p>
+                <div class="data">
+                    <div class="dataname">
+                        <p id="pokeID" class="pokemon-data left-data"># 0000</p>
+                        <p id="pokeName" class="pokemon-data right-data">Unknown</p>
+                    </div>
+                    <div class="t-hw">
+                        <div class="types">
+                            <img id="pokeType" class="type-pokemon left-data " src="./src/img/types/bug.png" alt="Type1">
+                            <img id="pokeType1" class="type-pokemon right-data " src="./src/img/types/dark.png" alt="Type2">
+                        </div>
+                        <div class="ht-wt">
+                            <div class="ht">
+                                <p class=".pokemon-data  left-data ">HT</p>
+                                <p id="pokeHeight" class="pokemon-data right-data">1.05 m</p>
+                            </div>
+                            <div class="wt">
+                                <p class=".pokemon-data left-data ">WT</p>
+                                <p id="pokeWeight" class="pokemon-data right-data">89 kg</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="type"></div>
+                
             </div>
             <div class="extra">
-                <div class="abis"></div>
-                div
+                <div class="abis">
+                    <p id="pokeAbi1" class=".pokemon-data hidden"></p>
+                    <p id="pokeAbi2" class=".pokemon-data hidden"></p>
+                </div>
+                <div class="stats">
+                    <p id="pokeStat1" class=".pokemon-data hidden"></p>
+                    <p id="pokeStat2" class=".pokemon-data hidden"></p>
+                    <p id="pokeStat3" class=".pokemon-data hidden"></p>
+                    <p id="pokeStat4" class=".pokemon-data hidden"></p>
+                    <p id="pokeStat5" class=".pokemon-data hidden"></p>
+                    <p id="pokeStat6" class=".pokemon-data hidden"></p>
+                </div>
             </div>
         </div>
         <div class="display2">
