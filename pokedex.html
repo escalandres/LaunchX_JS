@@ -6,36 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./src/img/pokeball.png">
     <link rel="stylesheet" href="./src/css/pokeStyle.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script> -->
     <title>Pokedex</title>
 </head>
 <body>
-    <input type="text" id="pokeName_input" placeholder="Nombre del pokemon">
-    <button type="submit" onclick="fetchPokemon()">Buscar</button>
-    <br><br>
-    
-    <h1 id="pokemessage"></h1>
-    <br>
-    <h1 id="pokeName"></h1>
-    <img id="pokeImg" class="pokemon-img" src="./src/img/pokeball.png" alt="">
-    <img id="pokeType" class="type-pokemon hidden" src="" alt="Type1">
-    <img id="pokeType1" class="type-pokemon hidden" src="" alt="Type2">
-    <p id="pokeHeight" class=".pokemon-data hidden"></p>
-    <p id="pokeWeight" class=".pokemon-data hidden"></p>
-    <p id="pokeID" class=".pokemon-data hidden"></p>
-    <p id="pokeAbi1" class=".pokemon-data hidden"></p>
-    <p id="pokeAbi2" class=".pokemon-data hidden"></p>
-
-    <p id="pokeStat1" class=".pokemon-data hidden"></p>
-    <p id="pokeStat2" class=".pokemon-data hidden"></p>
-    <p id="pokeStat3" class=".pokemon-data hidden"></p>
-    <p id="pokeStat4" class=".pokemon-data hidden"></p>
-    <p id="pokeStat5" class=".pokemon-data hidden"></p>
-    <p id="pokeStat6" class=".pokemon-data hidden"></p>
-
-    <p id="pokeMove1" class=".pokemon-data hidden"></p>
-    <p id="pokeMove2" class=".pokemon-data hidden"></p>
-    <p id="pokeMove3" class=".pokemon-data hidden"></p>
-    <p id="pokeMove4" class=".pokemon-data hidden"></p>
+    <div class="main-div-container">
+        <div class="pokedex"></div>
+        <div class="display1">
+            <div>
+                <div class="image">
+                    <img id="pokeImg" class="pokemon-img" src="./src/img/pokeball.png" alt="">
+                </div>
+                <div class="dataname">
+                    <p id="pokeName" class=".pokemon-data hidden"></p>
+                    <p id="pokeID" class=".pokemon-data hidden"></p>
+                </div>
+                <div class="type"></div>
+            </div>
+            <div class="extra">
+                <div class="abis"></div>
+                div
+            </div>
+        </div>
+        <div class="display2">
+            <input type="text" id="pokeName_input" placeholder="Nombre del pokemon">
+            <button id="search-btn" class="" type="submit" onclick="fetchPokemon()">Buscar</button>
+        </div>
+        <div class="semi-circulo"></div>
+        <div class="cuadrado-red"></div>
+        <div class="barra"></div>
+        <div class="circulo-white"></div>
+        <div class="trapecio-border">
+            <div class="trapecio"></div>
+        </div>
+        <div class="trapecio-border-right">
+            <div class="trapecio-right"></div>
+        </div>
+        <div class="last-border"></div>
+    </div>
 
 </body>
 <footer>
