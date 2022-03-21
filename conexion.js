@@ -1,5 +1,5 @@
-window.addEventListener('online', updateOnLineStatus)
-window.addEventListener('offline', updateOnLineStatus)
+window.addEventListener('online', updateOnlineStatus)
+window.addEventListener('offline', updateOnlineStatus)
 
 function updateOnlineStatus(event){
     const condition = navigator.online

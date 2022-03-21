@@ -3,4 +3,4 @@
 ![Pokedex html](./src/img/pokedex.png)
 <!-- ![Pokedex html](./pokedex.html) -->
 
-### A
+### Pruebe la pokedex accediendo a: https://escalandres.github.io/LaunchX_JS/
