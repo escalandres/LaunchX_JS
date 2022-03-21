@@ -1,0 +1,24 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "pokedex proyecto for LaunchX_JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escalandres/LaunchX_JS.git"
+  },
+  "author": "Andres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/escalandres/LaunchX_JS/issues"
+  },
+  "homepage": "https://github.com/escalandres/LaunchX_JS#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
