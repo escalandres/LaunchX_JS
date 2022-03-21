@@ -1,6 +1,6 @@
 # Practica JS: Pokedex
 ## Pokedex view
-<!-- ![Pokedex html](./pokedex.png) -->
-![Pokedex html](./pokedex.html)
+![Pokedex html](./src/img/pokedex.png)
+<!-- ![Pokedex html](./pokedex.html) -->
 
 ### A
