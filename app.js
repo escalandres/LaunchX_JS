@@ -150,5 +150,40 @@ let pokeImage = (url,found,pokeData) => {
         }
     }
     
+}
 
+function changeColor(){
+    const pokedex = document.getElementById("Pokedex");
+    const pokedex_ball = document.getElementById("pokedex_ball");
+    const pokedex_square = document.getElementById("pokedex_square");
+    const pokedex_trapecio_left = document.getElementById("trapecio_left");
+    const pokedex_trapecio_right = document.getElementById("trapecio_right");
+
+    let color = 0;
+    let first_pokedex_color = "rgb(118, 125, 141)";
+    let second_pokedex_color = "rgb(208, 195, 212)";
+    let first_pokeball_color = "rgb(194, 0, 26)";
+    let second_pokeball_color = "rgb(226, 98, 121)";
+
+    let pokedex_background = window.getComputedStyle( pokedex ,null).getPropertyValue('background-color'); 
+    // alert(pokedex_background)
+    // alert(first_pokeball_color)
+    if(pokedex_background == first_pokedex_color){
+        pokedex.style.backgroundColor = second_pokedex_color;
+        pokedex_ball.style.backgroundColor = second_pokeball_color;
+        pokedex_square.style.borderColor = second_pokeball_color;
+        pokedex_square.style.backgroundColor = second_pokeball_color;
+        pokedex_trapecio_left.style.borderBottomColor = second_pokeball_color;
+        pokedex_trapecio_right.style.borderBottomColor = second_pokeball_color;
+    }
+    else if(pokedex_background == second_pokedex_color){
+        pokedex.style.backgroundColor = first_pokedex_color;
+        pokedex_ball.style.backgroundColor = first_pokeball_color;
+        pokedex_square.style.borderColor = first_pokeball_color;
+        pokedex_square.style.backgroundColor = first_pokeball_color;
+        pokedex_trapecio_left.style.borderBottomColor = first_pokeball_color;
+        pokedex_trapecio_right.style.borderBottomColor = first_pokeball_color;
+    }
+    
+    // alert(typeof(pokedex_background))
 }

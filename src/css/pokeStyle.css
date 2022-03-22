@@ -10,9 +10,9 @@
 }
 
 body{
-    /* background-color: black; */
-    width: 100%;
-    height: 100%;
+    width: 412px; 
+    height: 914px;
+    margin: 0;
 }
 
 .hidden{
@@ -61,7 +61,7 @@ body{
     background-color: rgb(9,178,123);
 }
 
-.circulo-red{
+/* .circulo-red{
     width: 460px;
     height: 460px;
     -moz-border-radius: 50%;
@@ -72,7 +72,7 @@ body{
     z-index: 0;
     margin-top: -20rem;
     margin-left: -2rem;
-}
+} */
 
 .barra{
     position: absolute;
@@ -102,6 +102,13 @@ body{
 
 }
 
+#changeColor-btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    /* border: 2px solid rgb(40,46,58); */
+    z-index: 3;
+}
 
 .trapecio {
     position: absolute;
