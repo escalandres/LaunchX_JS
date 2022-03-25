@@ -13,138 +13,141 @@
 </head>
 <body>
     <div class="main-div-container">
-        <div id="Pokedex" class="pokedex"></div>
-        <div class="display1">
-            <div class="upper">
-                <div class="image">
-                    <img id="pokeImg" class="pokemon-img" src="./src/img/pokeball.png" alt="">
-                </div>
-                <div class="data">
-                    <div class="dataname">
-                        <p id="pokeID" class="pokemon-data left-data"># 0</p>
-                        <p id="pokeName" class="pokemon-data right-data">Unknown</p>
+        <div id="Pokedex" class="pokedex">
+            <div class="camera"></div>
+            <div class="display1">
+                <div class="upper">
+                    <div class="image">
+                        <img id="pokeImg" class="pokemon-img" src="./src/img/pokeball.png" alt="">
                     </div>
-                    <div class="t-hw">
-                        <div class="types">
-                            <img id="pokeType" class="type-pokemon left-data hidden" src="./src/img/types/bug.png" alt="Type1">
-                            <img id="pokeType1" class="type-pokemon right-data hidden" src="./src/img/types/dark.png" alt="Type2">
+                    <div class="data">
+                        <div class="dataname">
+                            <p id="pokeID" class="pokemon-data left-data"># 0</p>
+                            <p id="pokeName" class="pokemon-data right-data">Unknown</p>
                         </div>
-                        <div class="ht-wt">
-                            <div class="ht">
-                                <p class=".pokemon-data  left-data ">HT</p>
-                                <p id="pokeHeight" class="pokemon-data right-data">0 m</p>
+                        <div class="t-hw">
+                            <div class="types">
+                                <img id="pokeType" class="type-pokemon left-data hidden" src="./src/img/types/bug.png" alt="Type1">
+                                <img id="pokeType1" class="type-pokemon right-data hidden" src="./src/img/types/dark.png" alt="Type2">
                             </div>
-                            <div class="wt">
-                                <p class=".pokemon-data left-data ">WT</p>
-                                <p id="pokeWeight" class="pokemon-data right-data">0 kg</p>
+                            <div class="ht-wt">
+                                <div class="ht">
+                                    <p class=".pokemon-data  left-data ">HT</p>
+                                    <p id="pokeHeight" class="pokemon-data right-data">0 m</p>
+                                </div>
+                                <div class="wt">
+                                    <p class=".pokemon-data left-data ">WT</p>
+                                    <p id="pokeWeight" class="pokemon-data right-data">0 kg</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="extra">
-                <div class="abis">
-                    <div class="abis-title">
-                        <p>Habilidades</p>
-                    </div>
-                    <div class="abi1">
-                        <p id="pokeAbi1" class=".pokemon-data ">Not found</p>
-
-                    </div>
-                    <div class="abi2">
-                        <p id="pokeAbi2" class=".pokemon-data ">Not found</p>
                     </div>
                     
                 </div>
-                <div class="stats">
-                    <div class="stats-title">
-                        <p>Estadisticas</p>
-                    </div>
-                    <div class="stats-p"> 
-                        <div class="stat1">
-                            <p class=".pokemon-data left-stat">HP</p>
-                            <p id="pokeStat1" class=".pokemon-data right-stat">0</p>
+                <div class="extra">
+                    <div class="abis">
+                        <div class="abis-title">
+                            <p>Habilidades</p>
                         </div>
-                        <div class="stat2">
-                            <p class=".pokemon-data left-stat">Attack</p>
-                            <p id="pokeStat2" class=".pokemon-data right-stat">0</p>
-                        </div>
-                        <div class="stat3">
-                            <p class=".pokemon-data left-stat">Defense</p>
-                            <p id="pokeStat3" class=".pokemon-data right-stat">0</p>
-                        </div>
-                        <div class="stat4">
-                            <p class=".pokemon-data left-stat">Sp. Atk</p>
-                            <p id="pokeStat4" class=".pokemon-data right-stat">0</p>
-                        </div>
-                        <div class="stat5">
-                            <p class=".pokemon-data left-stat">Sp. Def</p>
-                            <p id="pokeStat5" class=".pokemon-data right-stat">0</p>
-                        </div>
-                        <div class="stat6">
-                            <p class=".pokemon-data left-stat">Speed</p>
-                            <p id="pokeStat6" class=".pokemon-data right-stat">0</p>
-                        </div>
-                    </div>
+                        <div class="abi1">
+                            <p id="pokeAbi1" class=".pokemon-data ">Not found</p>
 
-                    
-                </div>
-            </div>
-        </div>
-        <div class="display2">
-            <input type="text" id="pokeName_input" placeholder="Nombre del pokemon" required>
-            <button id="search-btn" class="" type="submit" onclick="fetchPokemon()">Buscar</button>
-            <div class="moves">
-                <div class="moves-title">
-                    <p class="left-data">Movimientos de</p>
-                    <p id="pokeName2" class=" right-data">Unknown</p>
-                </div>
-                <div class="moves-left">
-                    <div class="move1">
-                        <p id="pokeMove1" class=".pokemon-data hidde"></p>
-
+                        </div>
+                        <div class="abi2">
+                            <p id="pokeAbi2" class=".pokemon-data ">Not found</p>
+                        </div>
+                        
                     </div>
-                    <div class="move2">
-                        <p id="pokeMove2" class=".pokemon-data hidde"></p>
+                    <div class="stats">
+                        <div class="stats-title">
+                            <p>Estadisticas</p>
+                        </div>
+                        <div class="stats-p"> 
+                            <div class="stat1">
+                                <p class=".pokemon-data left-stat">HP</p>
+                                <p id="pokeStat1" class=".pokemon-data right-stat">0</p>
+                            </div>
+                            <div class="stat2">
+                                <p class=".pokemon-data left-stat">Attack</p>
+                                <p id="pokeStat2" class=".pokemon-data right-stat">0</p>
+                            </div>
+                            <div class="stat3">
+                                <p class=".pokemon-data left-stat">Defense</p>
+                                <p id="pokeStat3" class=".pokemon-data right-stat">0</p>
+                            </div>
+                            <div class="stat4">
+                                <p class=".pokemon-data left-stat">Sp. Atk</p>
+                                <p id="pokeStat4" class=".pokemon-data right-stat">0</p>
+                            </div>
+                            <div class="stat5">
+                                <p class=".pokemon-data left-stat">Sp. Def</p>
+                                <p id="pokeStat5" class=".pokemon-data right-stat">0</p>
+                            </div>
+                            <div class="stat6">
+                                <p class=".pokemon-data left-stat">Speed</p>
+                                <p id="pokeStat6" class=".pokemon-data right-stat">0</p>
+                            </div>
+                        </div>
 
-                    </div>
-                </div>
-                <div class="moves-right">
-                    <div class="move3">
-                        <p id="pokeMove3" class=".pokemon-data hidde"></p>
-
-                    </div>
-                    <div class="move4">
-                        <p id="pokeMove4" class=".pokemon-data hidde"></p>
-
+                        
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="down_part">
-            <div id="pokedex_ball" class="semi-circulo"></div>
-            <div id="pokedex_square" class="cuadrado-red"></div>
-            <div class="barra"></div>
-            <div  class="circulo-white">
-                <button id="changeColor-btn" type="button" onclick="changeColor()">
-            </button></div>
-            <div class="trapecio-border">
-                <div id="trapecio_left" class="trapecio"></div>
+            <div class="display2">
+                <input type="text" id="pokeName_input" placeholder="Nombre del pokemon" required>
+                <button id="search-btn" class="" type="button" onclick="fetchPokemon()">Buscar</button>
+                <div class="moves">
+                    <div class="moves-title">
+                        <p class="left-data">Movimientos de</p>
+                        <p id="pokeName2" class=" right-data">Unknown</p>
+                    </div>
+                    <div class="moves-left">
+                        <div class="move1">
+                            <p id="pokeMove1" class=".pokemon-data hidde"></p>
+
+                        </div>
+                        <div class="move2">
+                            <p id="pokeMove2" class=".pokemon-data hidde"></p>
+
+                        </div>
+                    </div>
+                    <div class="moves-right">
+                        <div class="move3">
+                            <p id="pokeMove3" class=".pokemon-data hidde"></p>
+
+                        </div>
+                        <div class="move4">
+                            <p id="pokeMove4" class=".pokemon-data hidde"></p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="trapecio-border-right">
-                <div id="trapecio_right" class="trapecio-right"></div>
+            <div class="down_part">
+                <div id="pokedex_ball" class="semi-circulo"></div>
+                <div id="pokedex_square" class="cuadrado-red"></div>
+                <div class="barra"></div>
+                <div class="circulo-white" >
+                    <button id="changeColor-btn" class="" type="button" onclick="changeColor()"></button>
+                </div>
+                <div class="trapecio-border">
+                    <div id="trapecio_left" class="trapecio"></div>
+                </div>
+                <div class="trapecio-border-right">
+                    <div id="trapecio_right" class="trapecio-right"></div>
+                </div>
+            </div>
+            
+            <div class="last-border">
+                <p class="last-p">Desarrollado por escalandres</p>
             </div>
         </div>
-        
-        <div class="last-border">
-            <p class="last-p">Desarrollado por escalandres</p>
-        </div>
+
     </div>
-
+    <script src="./app.js"></script>
 </body>
 <footer>
-    <script src="./app.js"></script>
-    <script src="./conexion.js"></script>
+    
+    
 </footer>
 </html>

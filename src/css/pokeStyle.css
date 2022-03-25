@@ -22,23 +22,22 @@ body{
 /*  Pokedex Design  */
 
 .main-div-container{
-    width: 412px; 
+    width: 419px; 
     height: 914px;
 }
 
 .pokedex{
-    width: 405px; 
+    width: 416px; 
     height: 1050px; 
     border: 3px solid #555;
     background: rgb(118,125,141);
     position: relative;
-    z-index: -1;
 }
 
 .display1{
     position: absolute;
     z-index: 0;
-    margin-top: -63.5rem;
+    margin-top: 2.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
     width: 325px; 
@@ -51,7 +50,7 @@ body{
 .display2{
     position: absolute;
     z-index: 0;
-    margin-top: -43.6rem;
+    margin-top: 22.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
     width: 325px; 
@@ -61,18 +60,49 @@ body{
     background-color: rgb(9,178,123);
 }
 
-/* .circulo-red{
-    width: 460px;
-    height: 460px;
+.camera{
+    position: absolute;
+    width: 25px;
+    height: 20px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: rgb(194,0,26);
-    border: 10px solid rgb(40,46,58);
+    background: rgb(56, 64, 80);
+    border: 1px solid rgb(40,46,58);
     z-index: 0;
-    margin-top: -20rem;
-    margin-left: -2rem;
-} */
+    margin-top: 6px;
+    margin-left: 48%;
+}
+
+.down_part{
+    height: 450px;
+}
+
+.semi-circulo {
+    width: 398px; 
+    height: 200px; 
+    background: rgb(194,0,26);
+    border: 10px solid #282e3a;
+    -moz-border-radius: 350px 350px 0 0;
+    -webkit-border-radius: 350px 350px 0 0;
+    border-radius: 300px 300px 0 0;
+    z-index: 0;
+    margin-top: 38rem;
+    margin-left: 0rem;
+}
+
+.cuadrado-red{
+    position: absolute;
+    z-index: 1;
+    margin-top: -1em;
+    margin-left: 0rem;
+    /* margin-right: 2rem; */
+    width: 398px; 
+    height: 193px; 
+    background: rgb(194,0,26);
+    border: 10px solid rgb(194,0,26);
+}
+
 
 .barra{
     position: absolute;
@@ -107,7 +137,16 @@ body{
     height: 80px;
     border-radius: 100%;
     /* border: 2px solid rgb(40,46,58); */
-    z-index: 3;
+    z-index: inherit;
+}
+
+#changeColor-btn:hover{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    /* border: 2px solid rgb(40,46,58); */
+    
+    background-color: rgb(233,233,231);
 }
 
 .trapecio {
@@ -167,45 +206,26 @@ body{
     z-index: 3;
     transform: rotate(270deg);
     margin-top: 2rem;
-    margin-left: 16.6rem;
+    margin-left: 17.1rem;
 }
 
 
-.semi-circulo {
-    width: 390px; 
-    height: 200px; 
-    background: rgb(194,0,26);
-    border: 10px solid #282e3a;
-    -moz-border-radius: 350px 350px 0 0;
-    -webkit-border-radius: 350px 350px 0 0;
-    border-radius: 300px 300px 0 0;
-    z-index: 0;
-    margin-top: -28rem;
-    margin-left: 0rem;
-}
-
-.cuadrado-red{
-    position: absolute;
-    z-index: 1;
-    margin-top: -1em;
-    margin-left: 0rem;
-    /* margin-right: 2rem; */
-    width: 390px; 
-    height: 193px; 
-    background: rgb(194,0,26);
-    border: 10px solid rgb(194,0,26);
-}
 
 .last-border{
     position: absolute;
     z-index: 3;
-    width: 405px; 
-    height: 30px; 
+    width: 100%; 
+    height: 40px; 
     border: 3px solid white;
     background: white;
-    margin-top: 12rem;
+    margin-top: -2.1rem;
 }
 
+.last-p{
+    padding-top: 5px;
+    margin-left: 0.5rem;
+    font-size: 20px;
+}
 /* Mostrar infos */
 
 
@@ -468,14 +488,14 @@ body{
 }
 
 
-.last-p{
-    margin-left: 0.5rem;
-    font-size: 20px;
-}
+
+
 
 /* Tablets en horizonal y escritorios normales
    ------------------------------------------------------------------------- */
-@media (min-width: 420px) {
+/*A partir de 420px a */
+
+@media (min-width: 420px) and (max-width: 768px){
     body,.main-div-container,.pokedex{
         width: 100%;
         height: 1050px;
@@ -497,6 +517,105 @@ body{
         font-size: 20px;
     }
     .down_part{
-        margin-left: 29.8rem;
+        margin-left: 10%;
+        margin-right: 35%;
+    }
+    .data{
+        width: 20%;
+    }
+    #pokeID, #pokeName{
+        font-size: 16px;
+    }
+    #search-btn, #search-btn:hover{
+        width: 100px;
+    }
+    .moves{
+        margin-left: 5%;
+    }
+}
+
+/* @media (min-width: 769px) and (max-width: 992px){
+
+} */
+
+/* @media (min-width: 993px) and (max-width: 1200px){
+
+} */
+
+@media (min-width: 1201px) and (max-width: 1400px){
+    body,.main-div-container,.pokedex{
+        width: 100%;
+        height: 1050px;
+    }
+    .last-border{
+        width: 100%;
+        height: 30px;
+        text-align: center;
+    }
+    .display1,.display2{
+        width: 94%;
+    }
+    
+    .move1 > p, .move2 > p, .move3 > p, .move4 > p{
+        font-size: 20px;
+        padding: 8px 15px 10px 0px;
+    }
+    .abi1 > p, .abi2 > p{
+        font-size: 20px;
+    }
+    .down_part{
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .data{
+        width: 20%;
+    }
+    #pokeID, #pokeName{
+        font-size: 16px;
+    }
+    #search-btn, #search-btn:hover{
+        width: 100px;
+    }
+    .moves{
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1541px){
+    body,.main-div-container,.pokedex{
+        width: 100%;
+        height: 1050px;
+    }
+    .last-border{
+        width: 100%;
+        height: 30px;
+        text-align: center;
+    }
+    .display1,.display2{
+        width: 94%;
+    }
+    
+    .move1 > p, .move2 > p, .move3 > p, .move4 > p{
+        font-size: 20px;
+        padding: 8px 15px 10px 0px;
+    }
+    .abi1 > p, .abi2 > p{
+        font-size: 20px;
+    }
+    .down_part{
+        margin-left: 37%;
+        /* margin-right: 37%; */
+    }
+    .data{
+        width: 20%;
+    }
+    #pokeID, #pokeName{
+        font-size: 16px;
+    }
+    #search-btn, #search-btn:hover{
+        width: 100px;
+    }
+    .moves{
+        margin-left: 5%;
     }
 }
