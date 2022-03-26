@@ -769,31 +769,30 @@ body{
         width: 100%;
         height: 1050px;
     }
-    .last-border{
-        width: 100%;
-        height: 30px;
-        text-align: center;
+    .pokemon-data{
+        font-size: 60px;
     }
     .display1,.display2{
-        width: 94%;
+        width: 93%;
     }
     
     .move1 > p, .move2 > p, .move3 > p, .move4 > p{
-        font-size: 16px;
-        padding: 8px 15px 10px 0px;
+        font-size: 23px;
+        padding: 10px 0px 10px 0px;
     }
     .abi1 > p, .abi2 > p{
-        font-size: 1px;
+        font-size: 25px;
     }
     .down_part{
+        width: 65%;
         margin-left: 35%;
-        margin-right: 35%;
     }
     .data{
-        width: 20%;
+        width: 46%;
     }
     #pokeID, #pokeName{
-        font-size: 14px;
+        margin-left: 5rem;
+        font-size: 22px;
     }
     #search-btn, #search-btn:hover{
         width: 100px;
@@ -803,36 +802,35 @@ body{
     }
 }
 
-@media (min-width: 1401px) and (max-width: 1541px){
+@media (min-width: 1401px) and (max-width: 1540px){
     body,.main-div-container,.pokedex{
         width: 100%;
         height: 1050px;
     }
-    .last-border{
-        width: 100%;
-        height: 30px;
-        text-align: center;
+    .pokemon-data{
+        font-size: 60px;
     }
     .display1,.display2{
-        width: 94%;
+        width: 93%;
     }
     
     .move1 > p, .move2 > p, .move3 > p, .move4 > p{
-        font-size: 20px;
-        padding: 8px 15px 10px 0px;
+        font-size: 23px;
+        padding: 10px 0px 10px 0px;
     }
     .abi1 > p, .abi2 > p{
-        font-size: 20px;
+        font-size: 25px;
     }
     .down_part{
+        width: 63%;
         margin-left: 37%;
-        /* margin-right: 37%; */
     }
     .data{
-        width: 20%;
+        width: 46%;
     }
     #pokeID, #pokeName{
-        font-size: 16px;
+        margin-left: 5rem;
+        font-size: 22px;
     }
     #search-btn, #search-btn:hover{
         width: 100px;
@@ -842,6 +840,116 @@ body{
     }
     
 }
-/* @media (min-width: 1025px) and (max-width: 1200px){
+@media (min-width: 1541px) and (max-width: 1805px){
+    body,.main-div-container,.pokedex{
+        width: 100%;
+        height: 1050px;
+    }
+    .pokemon-data{
+        font-size: 60px;
+    }
+    .display1,.display2{
+        width: 93%;
+    }
+    
+    .move1 > p, .move2 > p, .move3 > p, .move4 > p{
+        font-size: 23px;
+        padding: 10px 0px 10px 0px;
+    }
+    .abi1 > p, .abi2 > p{
+        font-size: 25px;
+    }
+    .down_part{
+        width: 61%;
+        margin-left: 38%;
+    }
+    .data{
+        width: 46%;
+    }
+    #pokeID, #pokeName{
+        margin-left: 5rem;
+        font-size: 22px;
+    }
+    #search-btn, #search-btn:hover{
+        width: 100px;
+    }
+    .moves{
+        margin-left: 5%;
+    }
+}
 
-} */
+@media (min-width: 1541px) and (max-width: 1805px){
+    body,.main-div-container,.pokedex{
+        width: 100%;
+        height: 1050px;
+    }
+    .pokemon-data{
+        font-size: 60px;
+    }
+    .display1,.display2{
+        width: 93%;
+    }
+    
+    .move1 > p, .move2 > p, .move3 > p, .move4 > p{
+        font-size: 23px;
+        padding: 10px 0px 10px 0px;
+    }
+    .abi1 > p, .abi2 > p{
+        font-size: 25px;
+    }
+    .down_part{
+        width: 61%;
+        margin-left: 38%;
+    }
+    .data{
+        width: 46%;
+    }
+    #pokeID, #pokeName{
+        margin-left: 5rem;
+        font-size: 22px;
+    }
+    #search-btn, #search-btn:hover{
+        width: 100px;
+    }
+    .moves{
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 1806px) and (max-width: 2050px){
+    body,.main-div-container,.pokedex{
+        width: 100%;
+        height: 1050px;
+    }
+    .pokemon-data{
+        font-size: 60px;
+    }
+    .display1,.display2{
+        width: 93%;
+    }
+    
+    .move1 > p, .move2 > p, .move3 > p, .move4 > p{
+        font-size: 23px;
+        padding: 10px 0px 10px 0px;
+    }
+    .abi1 > p, .abi2 > p{
+        font-size: 25px;
+    }
+    .down_part{
+        width: 60%;
+        margin-left: 40%;
+    }
+    .data{
+        width: 46%;
+    }
+    #pokeID, #pokeName{
+        margin-left: 5rem;
+        font-size: 22px;
+    }
+    #search-btn, #search-btn:hover{
+        width: 100px;
+    }
+    .moves{
+        margin-left: 5%;
+    }
+}
