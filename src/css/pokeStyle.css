@@ -241,7 +241,7 @@ body{
 .pokemon-data{
     color: rgb(65,61,60);
     font-family: Vcr;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .left-data{
@@ -251,7 +251,7 @@ body{
 
 .right-data{
     float: left;
-    margin-left: 1rem;
+    margin-left: 0.7rem;
 }
 
 .upper{
@@ -266,6 +266,11 @@ body{
     margin-left: 0.5rem;
     float: left;
 }
+.pokemon-img{
+    width: 150px;
+    height: 150px;
+}
+
 .data{
     border: 2px solid rgb(24,24,24);
     width: 150px;
@@ -290,11 +295,6 @@ body{
 
 .dataname > p{
     padding-top: 6px;
-}
-
-.pokemon-img{
-    width: 150px;
-    height: 150px;
 }
 
 .t-hw{
